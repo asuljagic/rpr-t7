@@ -7,13 +7,17 @@ public class Grad implements Serializable {
     private int brStanovnika = 0;
     private double[] temperature;
 
-    public Grad() {
+    public Grad(String grad, Double[] temperature) {
+        this.temperature = new double[1000];
+    }
+
+    public Grad(){
         temperature = new double[1000];
     }
 
 
 
-    public Grad(String naziv, Double[] temperature) {
+    public Grad(String naziv,int brStanovnika, Double[] temperature) {
         this.nazivGrada = naziv;
         this.temperature = new double[1000];
         for (int i = 0; i < temperature.length; i++) {
