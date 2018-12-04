@@ -92,7 +92,6 @@ public class Tutorijal {
         drzava1.setPovrsina(2343.0);
 
 
-
         UN drzavaD=new UN();
         drzavaD.dodajDrzavu(drzava);
         drzavaD.dodajDrzavu(drzava1);
