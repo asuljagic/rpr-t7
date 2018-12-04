@@ -79,21 +79,24 @@ public class Tutorijal {
         Grad g2=rez.get(1);
         Drzava drzava=new Drzava();
         drzava.setGlavniGrad(g1);
-        drzava.setNaziv("Bih");
-        drzava.setBrStanovnika(45525);
+        drzava.setNaziv("BiH");
+        drzava.setBrStanovnika(400000);
         drzava.setJedinicaZaPovrsinu("km");
-        drzava.setPovrsina(25525.0);
+        drzava.setPovrsina(122132.0);
 
         Drzava drzava1=new Drzava();
         drzava1.setGlavniGrad(g2);
-        drzava1.setNaziv("BH");
+        drzava1.setNaziv("Srbija");
         drzava1.setBrStanovnika(455);
         drzava1.setJedinicaZaPovrsinu("km");
-        drzava1.setPovrsina(225.0);
+        drzava1.setPovrsina(2343.0);
 
-        UN drz=new UN();
-        drz.dodajDrzavu(drzava);
-        drz.dodajDrzavu(drzava1);
-        zapisiXml(drz);
+
+
+        UN drzavaD=new UN();
+        drzavaD.dodajDrzavu(drzava);
+        drzavaD.dodajDrzavu(drzava1);
+
+        zapisiXml(drzavaD);
     }
 }
