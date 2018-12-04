@@ -7,9 +7,11 @@ public class Drzava implements Serializable {
     private int brStanovnika;
     private double povrsina;
     private String jedinicaZaPovrsinu = "";
-    private Grad glavniGrad = new Grad();
+    private Grad glavniGrad;
 
-    public Drzava() {}
+    public Drzava() {
+        glavniGrad = new Grad();
+    }
 
     public Drzava(String naziv, int brStanovnika, double povrsina, String jedinicaZaPovrsinu, Grad glavniGrad) {
         this.naziv = naziv;
